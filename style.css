@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+}
+.invoice-data {
+  background-color: rgb(19, 79, 79);
+  border: 5px solid red;
+  width: 75%;
+  padding: 10px;
+  height: 150vh;
+  position: relative;
+}
+.logo {
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  margin: 10px 0px;
+  padding-bottom: 10px;
+  border-bottom: 8px solid black;
+}
+.invoice-data select {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+.invoice-data select:focus {
+  border: 3px solid blue;
+  border-radius: 5px;
+}
+
+/* ====================price */
+.price {
+  margin: 20px 0px;
+  border-bottom: 8px solid red;
+  padding-bottom: 20px;
+}
+.price .p1 {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+.price .p2 {
+  display: flex;
+  justify-content: space-around;
+}
+.p2 input {
+  width: 28%;
+  padding: 10px 15px;
+}
+.btn {
+  background-color: yellow;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ==============auto-q */
+
+#parent {
+  overflow: auto;
+}
+
+.auto-q {
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: black;
+  margin: 10px 0px;
+}
+.names {
+  border-bottom: 10px solid red;
+}
+.billing {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 20px 20px;
+  align-items: center;
+}
+/* ============== amount  */
+
+.amount {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  position: absolute;
+  left: 98%;
+  z-index: 1;
+  top: 70vh;
+}
+.amount input {
+  margin: 15px 0px;
+  padding: 10px 5px;
+}
+
+/* ===================button  */
+.button {
+  width: 98%;
+  position: absolute;
+  bottom: 50px;
+}
+.button .btn1 {
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+  color: white;
+  background-color: green;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.button .btn2 {
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  cursor: pointer;
+}

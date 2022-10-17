@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="invoice-data">
+        <h1 class="logo">Departmental Invoice</h1>
+        <select id="selector" onclick="return selectData()">
+          <option value="">Select Anything</option>
+          <option type="number" value="20" id="Pencil">Pencil</option>
+          <option value="100">Milk</opt>
+          <option value="300">Cofee</option>
+        </select>
+        <div class="price">
+          <div class="p1">
+            <h3>Price</h3>
+            <h3>Quentity</h3>
+            <h3>Ammount</h3>
+          </div>
+          <div class="p2">
+            <input type="number" id="inputPencil" readonly />
+            <input type="number" id="quentity"  onclick=" selectData()" value="1" />
+            <input type="number" id="quentityamount" readonly />
+            <button class="btn" id="btnfumc" >Add</button>
+          </div>
+        </div>
+        <div id="parent">
+        <div class="names">
+          <div class="auto-q">
+            <h3>Product Name</h3>
+            <h3>Price</h3>
+            <h3>Quentity</h3>
+            <h3>Amount</h3>
+          </div>
+        </div>
+        <!-- <div  class="billing" >
+          <h3 id="pvalue">Pencil</h3>
+          <h3 id="pamount">20</h3>
+          <h3 id="pquentity">1</h3>
+          <h3 id="ptotal">20</h3>
+        </div> -->
+      </div>
+        <!-- ==================== total amount  -->
+        <div class="amount">
+          <input type="number" readonly  id="totalamount"/>
+          <input type="number" value="5" id="discount" readonly />
+          <input type="number" value="7.5" id="tax" readonly />
+          <input type="number" readonly id="totalbill"/>
+        </div>
+
+        <!-- ======================= buttons  -->
+        <div class="button">
+          <button class="btn1">Save As</button>
+          <button class="btn2">Print</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
